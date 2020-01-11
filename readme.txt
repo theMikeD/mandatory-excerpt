@@ -1,9 +1,17 @@
-# Mandatory Excerpts for WordPress
+=== Mandatory Excerpts ===
+Contributors: theMikeD
+Tags: excerpt
+Plugin page: https://www.codenamemiked.com/plugins/mandatory-excerpt/
+Requires at least: 4.4.0
+Tested up to: 5.3.2
+Requires PHP: 7.0
+Stable tag: 1.0.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Causes the excerpt to be required before a post can be published. Filters are provided for customization.
 
-## Description 
-
+== Description ==
 An excerpt is a (usually) brief, text-only post summary. It is used in various places of a theme when a summary of a post is needed, such as on your blog page and archive pages for terms.
 
 Excerpts are either manually crafted or (usually poorly) automatically extracted from the main post content. Hand crafted ones are better because
@@ -20,7 +28,7 @@ Tip: If you don’t see a spot for the excerpt in your post edit screen, there a
 1. The post type does not support the excerpt field. Generally, posts and pages support it but it can be turned off in code.
 2. The Excerpt field is not being displayed. To see it, click on Screen Options button on the top right corner of the classic editor post edit screen and then enable it.
 
-## Installation
+== Installation ==
 
 Either use the WordPress Plugin Installer (Dashboard > Plugins > Add New, then search for "genesis taxonomy images"), or manually as follows:
 
@@ -37,13 +45,14 @@ Note for WordPress Multisite users:
 * Install the plugin in your */plugins/* directory (do not install in the */mu-plugins/* directory).
 * In order for this plugin to be visible to Site Admins, the plugin has to be activated for each blog by the Network Admin.
 
-## Upgrading from a previous version
+== Upgrading from a previous version ==
 
 Use the upgrade link in the Dashboard (Dashboard > Updates) to upgrade this plugin.
 
-## Frequently Asked Questions
 
-### Where can I get Support?
+== Frequently Asked Questions ==
+
+= Where can I get Support? =
 
 Guidance on using the plugin can be found in the plugin's User Guide (TBD).
 
@@ -53,15 +62,15 @@ Support is provided in my free time but every effort will be made to respond to 
 
 Source code can be found in [github](https://github.com/theMikeD/mandatory_excerpt).
 
-### Where is the Settings page?
+= Where is the Settings page? =
 
 There isn't one.
 
-### Does this plugin support custom post types?
-
+= Does this plugin support custom post types? =
 Yes, if the custom post type supprts the excerpt field. But you'll have to specifically include it using the `mandatory_excerpt_post_types` filter
 
-## License and Disclaimer
+
+== License and Disclaimer ==
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License 2 as published by
 the Free Software Foundation.
@@ -70,7 +79,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 The license for this software can be found here: [http://www.gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
 
-## Changelog
+== Changelog ==
 
 = 1.0.0 =
 * 11 January 2020

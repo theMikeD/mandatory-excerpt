@@ -22,20 +22,18 @@ Tip: If you don’t see a spot for the excerpt in your post edit screen, there a
 
 ## Installation
 
-Either use the WordPress Plugin Installer (Dashboard > Plugins > Add New, then search for "genesis taxonomy images"), or manually as follows:
+Either use the WordPress Plugin Installer (Dashboard > Plugins > Add New, then search for "mandatory excerpt"), or manually as follows:
 
-1. Upload the entire `genesis-taxonomy-images` folder to the `/wp-content/plugins/` directory
-2. DO NOT change the name of the `genesis-taxonomy-images` folder
+1. Upload the entire `mandatory-excerpt` folder to the `/wp-content/plugins/` directory
+2. DO NOT change the name of the `mandatory-excerpt` folder
 3. Activate the plugin through the 'Plugins' menu in the WordPress Dashboard
-
-You can now add images to any taxonomy by visiting the taxonomy admin page.
-
-Note: You must be using a Genesis child theme with Genesis version 2 or greater or the plugin will not activate.
 
 Note for WordPress Multisite users:
 
-* Install the plugin in your */plugins/* directory (do not install in the */mu-plugins/* directory).
+* Install the plugin in your `/plugins/` directory (do not install in the `/mu-plugins/` directory).
 * In order for this plugin to be visible to Site Admins, the plugin has to be activated for each blog by the Network Admin.
+
+This plugin is based on work done by Scott Walkinshaw.
 
 ## Upgrading from a previous version
 

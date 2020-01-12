@@ -28,17 +28,15 @@ Tip: If you don’t see a spot for the excerpt in your post edit screen, there a
 1. The post type does not support the excerpt field. Generally, posts and pages support it but it can be turned off in code.
 2. The Excerpt field is not being displayed. To see it, click on Screen Options button on the top right corner of the classic editor post edit screen and then enable it.
 
+This plugin is based on work done by Scott Walkinshaw.
+
 == Installation ==
 
-Either use the WordPress Plugin Installer (Dashboard > Plugins > Add New, then search for "genesis taxonomy images"), or manually as follows:
+Either use the WordPress Plugin Installer (Dashboard > Plugins > Add New, then search for "mandatory excerpt"), or manually as follows:
 
-1. Upload the entire `genesis-taxonomy-images` folder to the `/wp-content/plugins/` directory
-2. DO NOT change the name of the `genesis-taxonomy-images` folder
+1. Upload the entire `mandatory-excerpt` folder to the `/wp-content/plugins/` directory
+2. DO NOT change the name of the `mandatory-excerpt` folder
 3. Activate the plugin through the 'Plugins' menu in the WordPress Dashboard
-
-You can now add images to any taxonomy by visiting the taxonomy admin page.
-
-Note: You must be using a Genesis child theme with Genesis version 2 or greater or the plugin will not activate.
 
 Note for WordPress Multisite users:
 

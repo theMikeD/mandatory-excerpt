@@ -21,7 +21,12 @@
 
 # ignore all composer installed packages
 **/vendor/
+composer.lock
+
+# ignore all node/webpack installed packages
+**/node_modules/
 package-lock.json
+
 
 # Unit Test
 **/tests/codesniffer.ruleset.xml

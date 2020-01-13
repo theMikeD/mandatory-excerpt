@@ -1,17 +1,18 @@
 <?php
 /**
 Plugin Name:       Mandatory Excerpt
-Plugin URI:        https://wordpress.org/plugins/mandatory excerpt/
-Description:       Causes the excerpt to be required before a post can be published. Filters are provided for customization.
-Version:           1.0.0
+Plugin URI:        https://wordpress.org/plugins/mandatory-excerpt/
+Description:       Causes the excerpt to be required before a post can be published. Supports both editor types (classic and block). Filters are provided for customization; see the <a href='https://www.codenamemiked.com/plugins/mandatory-excerpt/'>User Guide</a> for complete usage tips.
+Version:           1.1.0
 Requires at least: 4.4.0
 Requires PHP:      7.0
 Author:            theMikeD
 Author URI:        https://www.codenamemiked.com/plugins/mandatory-excerpt/
 License:           GNU General Public License v2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
-
-Classic editor support is based on the community work found here https://gist.github.com/swalkinshaw/2695510
+Text Domain:       mandatory-excerpt
+Domain Path:       /languages
+Classic editor support is based on the work done by Scott Walkinshaw and other contributors, found [here](https://gist.github.com/swalkinshaw/2695510)
 
 @package cnmd
 */
@@ -21,8 +22,11 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'CNMD_ME_DIR', plugin_dir_path( __FILE__ ) );
+load_plugin_textdomain( 'mandatory-excerpt', false, 'mandatory-excerpt/languages/' );
 
+define( 'CNMD_ME_DIR', plugin_dir_path( __FILE__ ) );
+define( 'CNMD_ME_URL', plugins_url( 'mandatory-excerpt' ) );
+define( 'CNMD_ME_BASENAME', plugin_basename( __FILE__ ) );
 /**
  * The class autoloader.
  */

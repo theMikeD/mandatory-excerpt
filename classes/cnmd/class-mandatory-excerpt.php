@@ -62,7 +62,7 @@ class Mandatory_Excerpt {
 
 
 	/**
-	 * Checks to see if the excerpt has been set and, if not, and if other conditions are met, sets teh post status
+	 * Checks to see if the excerpt has been set and, if not, and if other conditions are met, sets the post status
 	 * to draft and prevents the post from being published.
 	 *
 	 * @param array $data    Array of data about the post.

@@ -77,6 +77,12 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 The license for this software can be found here: [http://www.gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
 
+
+== Screenshots ==
+
+1. If this plugin is activated and you try to save a post without an excerpt, this message will appear and the post status will be reset to "draft"
+2. If you don't see the Excerpt section, it may be because it's not enabled. Click Screen Options at the top right of the edit screen, and enable it.
+
 == Changelog ==
 
 = 1.0.0 =

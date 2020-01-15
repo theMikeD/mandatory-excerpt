@@ -11,7 +11,7 @@ Author URI:        https://www.codenamemiked.com/plugins/mandatory-excerpt/
 License:           GNU General Public License v2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
-Based on the community work found here https://gist.github.com/swalkinshaw/2695510
+Classic editor support is based on the community work found here https://gist.github.com/swalkinshaw/2695510
 
 @package cnmd
 */

@@ -1,0 +1,49 @@
+# Copyright (C) 2020 theMikeD
+# This file is distributed under the same license as the Mandatory Excerpt plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Mandatory Excerpt 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mandatory-excerpt\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-01-15T16:10:22+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: mandatory-excerpt\n"
+
+#. Plugin Name of the plugin
+#: js/mandatory-excerpt-notice.js:122
+msgid "Mandatory Excerpt"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/mandatory-excerpt/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Causes the excerpt to be required before a post can be published. Supports both editor types (classic and block). Filters are provided for customization; see the <a href='https://www.codenamemiked.com/plugins/mandatory-excerpt/'>User Guide</a> for complete usage tips."
+msgstr ""
+
+#. Author of the plugin
+msgid "theMikeD"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.codenamemiked.com/plugins/mandatory-excerpt/"
+msgstr ""
+
+#: classes/cnmd/class-mandatory-excerpt.php:175
+#: js/mandatory-excerpt-notice.js:92
+msgid "Your request to publish has been cancelled because an excerpt is required. Please add an excerpt and try again."
+msgstr ""
+
+#: classes/cnmd/class-mandatory-excerpt.php:178
+msgid "Unexpected error"
+msgstr ""
+
+#: js/mandatory-excerpt-notice.js:118
+msgid "This post cannot be published because an excerpt is required. Please add an excerpt and try again."
+msgstr ""

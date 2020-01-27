@@ -54,10 +54,28 @@ class Mandatory_Excerpt {
 
 	/**
 	 * Sets hooks and filters for the admin.
+	 *
+	 * @since 1.0.0
 	 */
 	private function set_hooks__admin() {
+		add_filter( 'plugin_action_links_' . CNMD_ME_BASENAME, array( $this, 'add_action_links' ) );
 		add_filter( 'wp_insert_post_data', array( $this, 'make_excerpt_mandatory' ) );
 		add_action( 'admin_notices', array( $this, 'show_message' ) );
+		add_action( 'init', array( $this, 'register_gutenberg_assets' ) );
+		add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_gutenberg_assets' ) );
+	}
+
+
+	/**
+	 * Adds a Help link to the plugin listing.
+	 *
+	 * @param $links
+	 *
+	 * @return array
+	 */
+	public function add_action_links( $links ) {
+		$links[] = '<a target="_blank" href="https://www.codenamemiked.com/plugins/mandatory-excerpt/">Help</a>';
+		return $links;
 	}
 
 
@@ -157,12 +175,48 @@ class Mandatory_Excerpt {
 		}
 		switch ( absint( $_GET['excerpt_required'] ) ) {
 			case 1:
-				$message = __( 'Excerpt is required to publish a post.', 'mandatory-excerpt' );
+				$message = __( 'Your request to publish has been cancelled because an excerpt is required. Please add an excerpt and try again.', 'mandatory-excerpt' );
 				break;
 			default:
 				$message = __( 'Unexpected error', 'mandatory-excerpt' );
 		}
-		echo '<div id="notice" class="error"><p>' . esc_html( $message ) . '</p></div>';
+		echo '<div id="notice" class="notice error"><p>' . esc_html( $message ) . '</p></div>';
+	}
+
+
+	/**
+	 * Enables the i18n functions for the gutenberg script(s).
+	 *
+	 * @see https://developer.wordpress.org/block-editor/developers/internationalization/
+	 *
+	 * @since 1.1.0
+	 */
+	public function register_gutenberg_assets() {
+		wp_register_script(
+				'mandatory-excerpt',
+				CNMD_ME_URL . '/js/mandatory-excerpt.min.js',
+				array( 'wp-data', 'wp-editor', 'wp-i18n', 'wp-edit-post', 'wp-element', 'word-count' )
+		);
+		$v = wp_set_script_translations( 'mandatory-excerpt', 'mandatory-excerpt', CNMD_ME_DIR . 'languages' );
+	}
+
+
+	/**
+	 * Enqueues the scripts required for gutenberg support.
+	 */
+	public function enqueue_gutenberg_assets() {
+		if ( $this->is_valid_post_type( get_post_type() ) ) {
+			wp_localize_script(
+				'mandatory-excerpt',
+				'mandatory_excerpt_opts',
+				array(
+					'is_required' => 1,
+					//'skip_these_status'  => $this->get_status_to_skip(),
+					//'reset_these_status' => $this->get_status_to_reset(),
+				)
+			);
+		}
+		wp_enqueue_script( 'mandatory-excerpt' );
 	}
 
 

@@ -1,6 +1,18 @@
 # Mandatory Excerpts for WordPress
+<!-- only:wp>
+Contributors: theMikeD
+Tags: excerpt
+Plugin page: https://www.codenamemiked.com/plugins/mandatory-excerpt/
+Requires at least: 4.4.0
+Tested up to: 5.3.2
+Requires PHP: 7.0
+Stable tag: 1.1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+</only:wp -->
 
 Causes the excerpt to be required before a post can be published. Supports both editor types (classic and block aka gutenberg). Filters are provided for customization; see the [User Guide](https://www.codenamemiked.com/plugins/mandatory-excerpt/) for complete usage tips.
+
 ## Description 
 
 An excerpt is a (usually) brief, text-only post summary. It is used in various places of a theme when a summary of a post is needed, such as on your blog page and archive pages for terms.
@@ -46,7 +58,6 @@ There are two possible reasons for this.
 
 Sure does, but a little differently. See [the manual](https://www.codenamemiked.com/plugins/mandatory-excerpt/) for more.
 
-
 ### Where can I get Support?
 
 Guidance on using the plugin can be found in the plugin's User Guide (TBD).
@@ -73,6 +84,14 @@ the Free Software Foundation.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 The license for this software can be found here: [http://www.gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
+
+<!-- only:wp>
+== Screenshots ==
+
+1. Classic Editor: If you try to save a post without an excerpt, this message will appear and the post status will be reset to "draft."
+2. Classic Editor: If you don't see the Excerpt section, it may be because it's not enabled. Click Screen Options at the top right of the edit screen, and enable it.
+3. Gutenberg/Block Editor: the Publish/Update button is disabled until the excerpt has content. You also get a message about the missing excerpt.
+</only:wp -->
 
 ## Changelog
 

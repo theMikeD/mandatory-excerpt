@@ -29,7 +29,7 @@ if ( typeof mandatory_excerpt_opts !== 'undefined' && mandatory_excerpt_opts.is_
 		This bit manages the state of the "Update" button (for published posts) and the "Publish" button
 		(for unpublished posts). Runs only if the excerpt has actually changed.
 		 */
-		const isExcerpt = wp.data.select( 'core/editor' ).getEditedPostAttribute('excerpt');
+		let isExcerpt = wp.data.select( 'core/editor' ).getEditedPostAttribute('excerpt');
 		if ( wasExcerpt !== isExcerpt ) {
 			toggle_publishing_if_needed();
 		}

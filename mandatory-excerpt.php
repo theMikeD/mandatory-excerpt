@@ -3,7 +3,7 @@
 Plugin Name:       Mandatory Excerpt
 Plugin URI:        https://wordpress.org/plugins/mandatory-excerpt/
 Description:       Causes the excerpt to be required before a post can be published. Supports both editor types (classic and block). Filters are provided for customization; see the <a href='https://www.codenamemiked.com/plugins/mandatory-excerpt/'>User Guide</a> for complete usage tips.
-Version:           1.1.0
+Version:           1.1.1
 Requires at least: 4.4.0
 Requires PHP:      7.0
 Author:            theMikeD

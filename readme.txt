@@ -90,6 +90,10 @@ The license for this software can be found here: [http://www.gnu.org/licenses/gp
 3. Gutenberg/Block Editor: the Publish/Update button is disabled until the excerpt has content. You also get a message about the missing excerpt.
 
 == Changelog ==
+
+= 1.1.2 =
+* WP 6.9 tested ✅
+
 = 1.1.1 =
 * small fix for GB
 

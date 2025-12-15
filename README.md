@@ -94,6 +94,9 @@ The license for this software can be found here: [http://www.gnu.org/licenses/gp
 </only:wp -->
 
 ## Changelog
+= 1.1.2 =
+* WP 6.9 tested ✅
+
 = 1.1.1 =
 * small fix for GB
 
